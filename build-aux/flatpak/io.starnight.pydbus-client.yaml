@@ -1,0 +1,23 @@
+app-id: io.starnight.pydbus-client
+runtime: org.gnome.Platform
+runtime-version: '45'
+sdk: org.gnome.Sdk
+command: main.py
+
+finish-args:
+  - --device=dri
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=pulseaudio
+  - --socket=wayland
+  - --talk-name=io.starnight.dbus_test.TestServer
+
+modules:
+  - python3-requirements.json
+
+  - name: pydbus-client
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: ../..
