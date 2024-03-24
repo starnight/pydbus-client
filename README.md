@@ -19,3 +19,4 @@ $ flatpak run io.starnight.pydbus-client
 * [pydbus](https://github.com/LEW21/pydbus)
 * [pydbus' example client.py](https://github.com/LEW21/pydbus/blob/master/examples/clientserver/client.py)
 * [pydbus tutorial](https://github.com/LEW21/pydbus/blob/master/doc/tutorial.rst)
+* D-Bus debug tools: [dbus-monitor](https://dbus.freedesktop.org/doc/dbus-monitor.1.html) and [Bustle](https://gitlab.gnome.org/World/bustle)
