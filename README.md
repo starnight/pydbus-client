@@ -5,7 +5,7 @@ The corresponding D-Bus server example is [gdbus-server](https://github.com/star
 
 ## Build & Execute
 
-It is based on GNOME 45 runtime now.
+It is based on GNOME 46 runtime now.
 
 ```sh
 $ flatpak-builder build-dir build-aux/flatpak/io.starnight.pydbus-client.yaml --force-clean --install --user
