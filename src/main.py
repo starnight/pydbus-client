@@ -31,6 +31,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.send_msg_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         self.entry = Gtk.Entry()
         self.entry.set_hexpand(True)
+        self.entry.connect('activate', self.button_click_handler)
         self.button = Gtk.Button(label="Send")
         self.button.connect('clicked', self.button_click_handler)
         self.send_msg_box.append(self.entry)
